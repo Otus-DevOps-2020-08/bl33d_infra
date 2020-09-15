@@ -4,8 +4,8 @@ bl33d Infra repository
 # ДЗ № 4
 ## Multi-hop ssh connection
 
-bastion_IP = 35.198.167.169
-someinternalhost_IP = 10.156.0.3
+bastion_IP = 84.201.133.173
+someinternalhost_IP = 10.130.0.4
 
 **localworksation** -> **bastion** -> **someinternalhost**
 
