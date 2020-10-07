@@ -1,2 +1,9 @@
 packer/packer-bot-key.json
+packer/terraform-bot-key.json
 packer/variables.json
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
+terraform/terraform-bot-key.json
