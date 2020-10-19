@@ -2,6 +2,13 @@
 
 bl33d Infra repository
 
+## ДЗ № 8
+
+- Деплой Reddit вынесен в модуль app, а mongodb в модуль db
+- Созданы два каталога: prod и stage
+- Для prod окружения настроен S3 backend в бакете яндекса
+- В модулях настроены провиженеры, которые донастраивают mongodb и reddit app
+
 ## ДЗ № 7
 
 - Установлен Terraform

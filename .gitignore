@@ -6,4 +6,6 @@ packer/variables.json
 *.tfstate.backup
 *.tfvars
 .terraform/
-terraform/terraform-bot-key.json
+terraform-bot-key.json
+versions.tf
+backend.tf
