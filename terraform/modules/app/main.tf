@@ -25,29 +25,29 @@ resource "yandex_compute_instance" "app" {
     nat       = true
   }
 
-  connection {
-    type        = "ssh"
-    host        = self.network_interface.0.nat_ip_address
-    user        = "ubuntu"
-    agent       = false
-    private_key = file(var.private_key)
-  }
+  # connection {
+  #   type        = "ssh"
+  #   host        = self.network_interface.0.nat_ip_address
+  #   user        = "ubuntu"
+  #   agent       = false
+  #   private_key = file(var.private_key)
+  # }
 
-  provisioner "file" {
-    content = templatefile(
-      "${path.module}/files/puma.service",
-      {
-        database_url = var.database_url
-      }
-    )
-    destination = "/tmp/puma.service"
-  }
+  # provisioner "file" {
+  #   content = templatefile(
+  #     "${path.module}/files/puma.service",
+  #     {
+  #       database_url = var.database_url
+  #     }
+  #   )
+  #   destination = "/tmp/puma.service"
+  # }
 
-  provisioner "remote-exec" {
-    inline = [
-      "sudo mv /tmp/puma.service /etc/systemd/system/puma.service",
-      "sudo systemctl daemon-reload",
-      "sudo systemctl restart puma"
-    ]
-  }
+  # provisioner "remote-exec" {
+  #   inline = [
+  #     "sudo mv /tmp/puma.service /etc/systemd/system/puma.service",
+  #     "sudo systemctl daemon-reload",
+  #     "sudo systemctl restart puma"
+  #   ]
+  # }
 }
