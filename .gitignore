@@ -9,3 +9,4 @@ packer/variables.json
 terraform-bot-key.json
 versions.tf
 backend.tf
+*.retry
