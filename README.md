@@ -1,5 +1,7 @@
 # bl33d_infra
 
+[![Build Status](https://travis-ci.com/Otus-DevOps-2020-08/bl33d_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2020-08/bl33d_infra)
+
 bl33d Infra repository
 
 ## ДЗ № 10
