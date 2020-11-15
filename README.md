@@ -4,6 +4,13 @@
 
 bl33d Infra repository
 
+## ДЗ № 11
+
+- Рефакторинг плейбуков в ansible роли
+- Добавлена роль с ansible-galaxy, для деплоя nginx
+- Добавлен плейбук создающий локальных пользователей (пароли зашифрованы с помощью ansible-vault)
+- Добавлены тесты в Travis-CI
+
 ## ДЗ № 10
 
 - Были добавлены плейбуки reddit_app_one_play.yml / reddit_app_multiple_plays.yml / site.yml (разный уровень декомпозиции) для разворачивания приложения Reddit
